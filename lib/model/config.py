@@ -208,6 +208,13 @@ __C.TEST.MODE = 'nms'
 __C.TEST.RPN_TOP_N = 5000
 
 #
+# DenseNet options
+#
+__C.DENSENET = edict()
+# Number of fixed blocks during training, by default the first of all 4 blocks is fixed
+# Range: 0 (none) to 4 (all)
+__C.DENSENET.FIXED_BLOCKS = 0
+#
 # ResNet options
 #
 
